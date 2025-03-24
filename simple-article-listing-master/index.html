@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Simple Article Listing | devChallenges.io</title>
+
+    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+:root {
+  --primary-color: white;
+  --font-family: "Poppins", sans-serif;
+  --text-color: #111827;
+  --secondary-text-color: #6b7280;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero__title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feature__list {
+  display: flex;
+  align-items: center;
+  background: #f9fafb;
+  padding: 15px;
+  border-radius: 12px;
+  gap: 15px;
+}
+
+.feature__list--img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: rgb(0, 0, 0, 0.25);
+}
+
+.feature__content {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.feature__list--title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 10px;
+
+}
+
+.adding {
+  justify-content: center;
+  text-align: center;
+  color: var(--secondary-text-color);
+  margin-bottom: 20px;
+}
+
+.feature__description {
+  font-size: 0.7em;
+  color: var(--secondary-text-color);
+}
+.author-info {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 16px;
+  color: rgb(55, 65, 81);
+}
+
+      .author-info a {
+        text-decoration: none;
+      }
+
+/* Responsif */
+@media (max-width: 600px) {
+  .feature__list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .feature__list--img {
+    width: 100%;
+    height: auto;
+  }
+}
+   
+    </style>
+  </head>
+  <body>
+    <!-- Header title -->
+    <section class="feature">
+      <header class="hero">
+        <h1 class="hero__title">
+          We release interesting articles <br />
+          about technology
+        </h1>
+        <p class="hero__description"></p>
+      </header>
+      <div class="adding">
+        <p>/////////////</p>
+      </div>
+      <div class="feature__list">
+        <img class="feature__list--img" src="resources/photo_1.png" alt="cloud computing" />
+        <div class="feature__content">
+          <h2 class="feature__list--title">Unlocking the Power of Cloud Computing: A Guide <br /> to Scalable Solutions</h2>
+          <p class="feature__description">November 12, 2024</p>
+        </div>
+      </div>
+    
+      <div class="feature__list">
+        <img class="feature__list--img" src="resources/photo_2.png" alt="future AI" />
+        <div class="feature__content">
+          <h2 class="feature__list--title">The Future of AI: How Machine Learning is <br /> Revolutionizing Industries</h2>
+          <p class="feature__description">November 12, 2024</p>
+        </div>
+      </div>
+    
+      <div class="feature__list">
+        <img class="feature__list--img" src="resources/photo_3.png" alt="Impact of 5G" />
+        <div class="feature__content">
+          <h2 class="feature__list--title">The Impact of 5G on Business: How Faster Networks <br /> are Transforming the Way We Work</h2>
+          <p class="feature__description">November 12, 2024</p>
+        </div>
+      </div>
+
+      <div class="author-info">
+        Coded by <a href="#">Daniel Efrata</a> | Challenge by
+        <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+          >devChallenges.io</a
+        >.
+      </div>
+    </section>
+    
+    
+  </body>
+</html>
